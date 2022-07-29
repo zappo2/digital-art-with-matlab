@@ -8,7 +8,7 @@
 
 ppr= 3.6; % # petals per 1 revolution
 nr = 30; % radius resolution
-pr = 10; % petal resolution
+pr = 30; % petal resolution
 np = 40; % total number of petals
 pf = 1.995653; % How much the ends of the petals tilt up or down
 ps = 5/4; % Separation between petals
