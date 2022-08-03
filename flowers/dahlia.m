@@ -2,7 +2,7 @@
 %
 % The math for this was found as a rose in Ned's community blog:
 %   https://blogs.mathworks.com/community/2021/02/12/happy-valentines-day/
-% but Ned found it at this math art site:
+% but Ned found it at Paul Nylander's math art site:
 %   http://www.bugman123.com/Math/index.html
 % Updated for labeled parameters, rounded petals, new colors, and simplified some expressions. 
 
