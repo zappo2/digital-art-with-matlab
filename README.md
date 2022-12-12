@@ -11,5 +11,5 @@ See the README in each directory for how to use each of the examples.
 
 ![Example Punkin Breeds](./pumpkin/punkin_tiles.jpg)
 ![Example Flowers](./flowers/flower_tiles.jpg)
-![Example Snowflake](./snowflake/flaketilesh.jpg)
+![Example Snowflake](./snowflake/flaketilesh.png)
 ![Default Images in Parallax](./parallax/parallax_demo.gif)
