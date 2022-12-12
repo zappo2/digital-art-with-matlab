@@ -9,4 +9,4 @@ a transition from growing the nucleus, or before growing spurs.
 - snowflake3d.m - Extrude the 2d snowflake into 3d using a triangulation.
 - snowtiles - Draw different snowflakes in a tiled layout (see image below)
 
-![Example Snowflakes](./flaketiles.png)
+![Example Snowflakes](./flaketilesh.png)

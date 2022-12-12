@@ -2,10 +2,10 @@ function snowtiles
 % Draw a few snowflake variants in a vertal image
 
     f=gcf;
-    f.Position(3:4) = [ 400 500];
+    f.Position(3:4) = [ 500 400];
     f.Color='w';
 
-    tiledlayout(4,3,'Padding','none','TileSpacing','none')
+    tiledlayout(3,4,'Padding','none','TileSpacing','none')
 
     nexttile([3 3])
     snowflake()
