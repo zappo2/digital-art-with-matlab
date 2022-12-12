@@ -1,4 +1,4 @@
-function snowflake(steps)
+function psOut=snowflake(steps)
 % Draw a snowflake from a vector of step lengths
 %
 % Example: Random Snowflake
@@ -12,6 +12,10 @@ function snowflake(steps)
 %
 % Example: Flake with thick edges
 %    snowflake([5 2 1 1 5 1 1 5 8]);
+%
+% Example: Get a polyshape of a snowflake
+%    ps=snowflake;
+%
     
     arguments
         steps=[5 2 5 5 5 5];
@@ -45,9 +49,16 @@ function snowflake(steps)
         end
     end
 
-    % Convert segments into a polyshape and draw
-    plot(union([polyshape([ ringx(:,1) ringy(:,1) ]); % Nucleus
-                polybuffer(reshape([seg nan(size(seg,1),2)]',2,[])','line',1)]));
-    axis equal
+    % Convert segments into a polyshape
+    ps=union([polyshape([ ringx(:,1) ringy(:,1) ]); % Nucleus
+              polybuffer(reshape([seg nan(size(seg,1),2)]',2,[])','line',1)]);
+
+    if nargout==1
+        psOut=ps;
+    else
+        plot(ps);
+        axis equal
+        box on
+    end
 
 end

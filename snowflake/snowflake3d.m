@@ -19,37 +19,8 @@ function snowflake3d(steps, thickness)
         thickness=1
     end
 
-    if isstring(steps)
-        switch steps
-          case 'rand'
-            steps=randi(10,1,randi(8)+2); % Random Flake
-          otherwise
-            error('Unknown flake steps input: %s', steps);
-        end
-    end
-
-
-    % Snowflake Angles & Coordinates
-    ang=(90:60:390)';
-    dist=cumsum(steps);
-    ringx=cosd(ang)*dist;  ringy=sind(ang)*dist; % Main spur rings
-    seg=[ zeros(6,2) ringx(:,end) ringy(:,end) ]; % Segment init
-
-    spurs=@(o,a,l)[o [cosd(a-60) sind(a-60)]*l+o; % Spur Fcn
-                   o [cosd(a+60) sind(a+60)]*l+o];
-
-    % Traverse steps vector in each direction to compute segments
-    for dpth=2:length(steps)
-        for dir=1:6
-            seg=[seg
-                 spurs([ringx(dir,dpth) ringy(dir,dpth)],ang(dir),...
-                       min(sum(steps((dpth+1):end))/2,dist(dpth)))];
-        end
-    end
-
-    % Convert segments into a polyshape
-    ps = union([polyshape([ ringx(:,1) ringy(:,1) ]); % Nucleus
-                polybuffer(reshape([seg nan(size(seg,1),2)]',2,[])','line',1)]);
+    % Get the snowflake geometry as a polyshape
+    ps = snowflake(steps);
 
     % Convert into a 3D triangulation with specified depth
     tri = ps.triangulation();
@@ -78,6 +49,8 @@ function snowflake3d(steps, thickness)
     alpha(.5)
     daspect([1 1 1]);
     colormap(gca,winter);
+    box on
+    zlim([-5 thickness+5]);
     camlight
 
 end
