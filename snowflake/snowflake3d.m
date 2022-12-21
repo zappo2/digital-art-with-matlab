@@ -35,7 +35,7 @@ function snowflake3d(steps, thickness)
     layer2 = size(points, 1); % Layer 2 starts here.
 
     % Generate the final polygon as a triangulation.
-    TRI = triangulation([faces; faces+layer2; % top and bottom
+    TRI = triangulation([faces; fliplr(faces)+layer2; % top and bottom
                          edges(range,[2 1 2])+[0 0 layer2]; % edges connecting top/bottom
                          edges(range,[1 1 2])+[0 layer2 layer2];
                         ],...
