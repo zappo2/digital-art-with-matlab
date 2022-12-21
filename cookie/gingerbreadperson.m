@@ -14,8 +14,8 @@ K=['    xxx    '
    'xxx     xxx'
    ' x       x '];
 % Convert K into array of blob centers
-[y,x]=find(K~=' ');
-% Offset centers into 3D cookie space
+[y,x]=find(~isspace(K));
+% Scale and offset centers into 3D cookie space
 C=[x*5,y*5]+5;  C(:,3)=10;
 
 % Compute a volume using a short implementation of Blinn's blobs
@@ -30,9 +30,8 @@ end
 S=isosurface(vol,.3);
 % Draw the isosurface using patch
 newplot
-patch(S,'FaceColor','#a56c3c','EdgeColor','n'); % cookie
-lighting g
-material([.6 .9 .3 ])
+patch(S,'FaceColor','#a56c3c','EdgeColor','none'); % cookie
 axis equal ij off
-view(2)
+lighting gouraud
 camlight
+material([.6 .9 .3 ])

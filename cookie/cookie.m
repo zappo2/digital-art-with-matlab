@@ -41,7 +41,7 @@ function cookie(pattern, opts)
     end
 
     % Step 1: Convert PATTERN into array of blob centers
-    [y,x]=find(pattern~=' ');
+    [y,x]=find(~isspace(pattern));
     C=[x*5,y*5]+5;
 
     % Step 2: Compute a volume using Blinn's blobs function
@@ -88,10 +88,10 @@ function cookie(pattern, opts)
     end
 
     % Step 4.3: Make it look yummier
-    lighting g
-    material([.6 .9 .3 ])
-    axis equal ij off
     view(2)
+    axis equal ij off
+    lighting gouraud
+    material([.6 .9 .3 ])
     camlight
 
 end
