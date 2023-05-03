@@ -9,7 +9,7 @@ See the README in each directory for how to use each of the examples.
 - snowflake - Draw snowflakes
 - cookie - Draw shaped cookies
 - pipie - Draw a pie with a pi on it
-- may4th - Draw star wars themed doodles
+- may4th - Draw may 4th themed images
 - parallax - Draw two images hidden behind eachother in 3d
 
 ![Example Punkin Breeds](./pumpkin/punkin_tiles.jpg)

@@ -1,6 +1,6 @@
 # May 4th
 
-Create a doodle for May 4th, Star Wars day
+Create a doodle for May 4th
 
 - may4th.m - A doodle for May 4th
 - may4thanimation.m - Animate the doodle
