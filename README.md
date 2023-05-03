@@ -9,6 +9,7 @@ See the README in each directory for how to use each of the examples.
 - snowflake - Draw snowflakes
 - cookie - Draw shaped cookies
 - pipie - Draw a pie with a pi on it
+- may4th - Draw star wars themed doodles
 - parallax - Draw two images hidden behind eachother in 3d
 
 ![Example Punkin Breeds](./pumpkin/punkin_tiles.jpg)
@@ -16,4 +17,5 @@ See the README in each directory for how to use each of the examples.
 ![Example Snowflake](./snowflake/flaketilesh.png)
 ![Example Cookie](./cookie/cookie_tiles.png)
 ![Example PiPie](./pipie/PiPie.png)
+![Example May 4th doodle](./may4th/may4th.png)
 ![Default Images in Parallax](./parallax/parallax_demo.gif)
