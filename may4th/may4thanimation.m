@@ -1,6 +1,6 @@
 function may4thanimation(fname)
-% lightsaberanimation - Make the light saber expand and retract.
-% lightsaberanimation(fname) - Record to the file FNAME.
+% may4thanimation - Make the may4th doodle expand and retract.
+% may4thanimation(fname) - Record to the file FNAME.
 
     arguments
         fname string = ""
