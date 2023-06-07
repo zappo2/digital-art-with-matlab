@@ -10,6 +10,7 @@ See the README in each directory for how to use each of the examples.
 - cookie - Draw shaped cookies
 - pipie - Draw a pie with a pi on it
 - may4th - Draw may 4th themed images
+- snake - Draw an animated snake folding toy
 - parallax - Draw two images hidden behind eachother in 3d
 
 ![Example Punkin Breeds](./pumpkin/punkin_tiles.jpg)
@@ -18,4 +19,5 @@ See the README in each directory for how to use each of the examples.
 ![Example Cookie](./cookie/cookie_tiles.png)
 ![Example PiPie](./pipie/PiPie.png)
 ![Example May 4th doodle](./may4th/may4th.png)
+![Example Snake toy](./snake/animatedsnake.gif)
 ![Default Images in Parallax](./parallax/parallax_demo.gif)
