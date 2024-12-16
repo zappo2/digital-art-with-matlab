@@ -1,6 +1,6 @@
 # Pinecone
 
-Code for drawing a pinecone using Fibonacci a spiral.
+Code for drawing a pinecone using a Fibonacci spiral.
 
 - pinecone.m - Code for drawing a pinecone.
 - livepinecone.m - Live Script for reconfiguring a pinecone with sliders.
