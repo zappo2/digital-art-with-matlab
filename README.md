@@ -7,7 +7,9 @@ See the README in each directory for how to use each of the examples.
 - cookie - Draw shaped cookies
 - flowers - Draw some flowers
 - may4th - Draw may 4th themed images
+- pinecone - Draw a pinecone
 - pipie - Draw a pie with a pi on it
+- plants - Draw some plants
 - pumpkin - Draw a pumpkin
 - ring - Draw a gold ring with inscription
 - snake - Draw an animated snake folding toy
@@ -17,6 +19,8 @@ See the README in each directory for how to use each of the examples.
 Sample images:
 ![Example Punkin Breeds](./pumpkin/punkin_tiles.jpg)
 ![Example Flowers](./flowers/flower_tiles.jpg)
+![Example Plants](./plants/shamrock.jpg)
+![Example Pinecone](./pinecone/pinecone.png)
 ![Example Snowflake](./snowflake/flaketilesh.png)
 ![Example Cookie](./cookie/cookie_tiles.png)
 ![Example PiPie](./pipie/PiPie.png)
