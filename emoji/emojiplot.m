@@ -51,6 +51,18 @@ function th_out = emojiplot(X,Y,C,opts)
       case 'duck'
         T = '🦆';
         name = "Duckplot";
+      case 'tree'
+        T = '🌳';
+        name = "Treemap";
+      case 'donut'
+        T = '🍩';
+        name = "Donutchart";
+      case 'candle'
+        T = '🕯️';
+        name = "Candlestickplot";
+      case 'tornado'
+        T = '🌪️';
+        name = "Tornadochart";
       otherwise
         if strlength(opts.Emoji)==1 % Simple character
             T = char(opts.Emoji);
