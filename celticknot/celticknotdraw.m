@@ -25,9 +25,9 @@ function celticknotdraw()
           case 'downarrow'
             PAT(end+idx) = '-';
           case 'leftarrow'
-            PAT(end+idx) = '(';
-          case 'rightarrow'
             PAT(end+idx) = ')';
+          case 'rightarrow'
+            PAT(end+idx) = '(';
           case { 'backspace' 'delete' }
             PAT(end)='';
           case 'slash'
