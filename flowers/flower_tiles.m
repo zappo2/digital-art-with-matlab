@@ -1,5 +1,8 @@
-function flower_tiles
+function flower_tiles(export)
 % Display the interesting pumpkins in a tiled layout.
+    arguments
+        export=false;
+    end
 
     fig = gcf;
     fig.Position(3:4) = [ 1500 300 ];
@@ -27,6 +30,7 @@ function flower_tiles
     daffodil
     axis off
     title('Daffodil');
+    axis([-1 1 -1 1 -2.7 .6],'off');
     configaxis
 
     nexttile
@@ -38,10 +42,14 @@ function flower_tiles
     nexttile
     waterlily
     title('Water Lily');
-    set(gca,'clipping','off')
     axis([-.7 .7 -.7 .7 0 .8],'off')
     configaxis
 
+    if export
+        F = getframe(gcf);
+        imwrite(F.cdata,'flower_tiles.jpg');
+    end
+    
 end
 
 function configaxis()
@@ -50,7 +58,7 @@ function configaxis()
     io.ZoomSupported = false;
     io.DatatipsSupported = false;
     io.BrushSupported = false;
-    set(gca,'InteractionOptions',io);
-    axtoolbar(gca,{ 'restoreview' });
+    set(gca,'InteractionOptions',io,'Clipping','off');
+    axtoolbar(gca,{ 'restoreview' },'visible','off');
 end
             
