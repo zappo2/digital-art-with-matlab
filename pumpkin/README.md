@@ -8,6 +8,7 @@ Code for drawing Pumpkins.
 - short_punkin.m - Just the essentials for drawing a punkin.
 - punkin280.m - Draw a simple pumpkin in 280 chars or less.
 - pumspring.m - Animate a pumpkin spring
+- pumpkinmoon.m - Draw the moon on a pumpkin and show phases of the moon.
 - sleepyhollow_eigenwalker - Eigenwalker with a pumpkin head.
 
 ![Example Punkin Breeds](./punkin_tiles.jpg)
