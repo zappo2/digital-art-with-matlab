@@ -15,7 +15,7 @@ See the README in each directory for how to use each of the examples.
 - pinecone - Draw a pinecone
 - pipie - Draw a pie with a pi on it
 - plants - Draw some plants
-- pumpkin - Draw a pumpkin
+- pumpkin - Draw a pumpkins, and pumpkin related animations
 - ring - Draw a gold ring with inscription
 - snake - Draw an animated snake folding toy
 - snowflake - Draw snowflakes
